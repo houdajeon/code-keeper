@@ -1,0 +1,7 @@
+aws_region   = "eu-north-1"
+project_name = "cloud-design"
+
+# Set to false in an account where Amazon Inspector cannot be turned on
+# (service control policy denying inspector2:Enable): the images are then
+# scanned once at push time by ECR's basic scanning instead of continuously.
+# enhanced_scanning = false

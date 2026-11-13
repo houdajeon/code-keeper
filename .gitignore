@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+postman/cloud-design.postman_environment.json
+*.tfvars
+!*.tfvars.example
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Load test output (load-test/run-load-test.sh, watch-scaling.sh)
+load-test/results/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.tfplan
+tfplan
